@@ -22,6 +22,7 @@ namespace MyFirstApp
             
             app.Run(async (context) =>
             {
+                Console.WriteLine("Request for " + context.Request.Path);
                 await context.Response.WriteAsync("Hello World!");
             });
         }
